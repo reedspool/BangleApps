@@ -38,6 +38,13 @@ function showMenu() {
     '': {
       'title': 'Set timer'
     },
+    'Timer on': {
+      value: settingsChronowid.started,
+      onchange: v => {
+        settingsChronowid.started = v;
+        updateSettings();
+      }
+    },
     '< Back' :  ()=>{load();},
     'Reset values': function() {
       settingsChronowid.hours = 0;
@@ -74,13 +81,6 @@ function showMenu() {
       step: 1,
       onchange: v => {
         settingsChronowid.seconds = v;
-        updateSettings();
-      }
-    },
-    'Timer on': {
-      value: settingsChronowid.started,
-      onchange: v => {
-        settingsChronowid.started = v;
         updateSettings();
       }
     },

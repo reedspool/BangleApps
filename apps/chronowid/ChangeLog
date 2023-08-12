@@ -5,3 +5,4 @@
       Better auto-update behaviour, less RAM used
 0.05: Fix error running app on new firmwares (fix #1140)
 0.06: Use default Bangle formatter for booleans
+0.07: Reed/Hack: moves the menu item to start the timer to the top, so it's a single button press to start
