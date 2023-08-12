@@ -1,0 +1,19 @@
+{
+  "id": "chronowid25",
+  "name": "Chrono 25 min",
+  "shortName": "Chrono 25 min",
+  "version": "0.01",
+  "description": "25 min Chronometer (timer) which runs as widget.",
+  "icon": "app.png",
+  "tags": "tool,widget",
+  "supports": ["BANGLEJS","BANGLEJS2"],
+  "screenshots": [{"url":"screenshot.png"}],
+  "readme": "README.md",
+  "data": [{"name":"chronowid25.json"},{"name":"chronowid25.settings.json"}],
+  "storage": [
+    {"name":"chronowid25.wid.js","url":"widget.js"},
+    {"name":"chronowid25.settings.js","url":"settings.js"},
+    {"name":"chronowid25.app.js","url":"app.js"},
+    {"name":"chronowid25.img","url":"app-icon.js","evaluate":true}
+  ]
+}
