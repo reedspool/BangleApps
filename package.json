@@ -16,7 +16,8 @@
     "test": "node bin/sanitycheck.js && eslint ./apps --ext .js && eslint ./modules --ext .js",
     "update-local-apps": "./bin/create_apps_json.sh apps.local.json",
     "local": "npm-watch & npx http-server -a localhost -c-1",
-    "start": "npx http-server -c-1"
+    "test-without-modules": "node bin/sanitycheck.js && eslint ./apps --ext .js",
+    "start": "npx http-server -c-1 -S -C ./myserver.crt -K ./myserver.key"
   },
   "watch": {
     "update-local-apps": "apps/*/metadata.json"
